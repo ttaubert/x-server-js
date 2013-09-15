@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>XDisplay Example</title>
+    <!--link rel="stylesheet" href="style.css"-->
+    <script src="../lib/bundle.js"></script>
+    <style type="text/css">
+      canvas {
+        width: 640px;
+        height: 480px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page content -->
+    <canvas id="screen" width="640" height="480" />
+    <script>XDisplay.create(document.getElementById("screen"), "ws://127.0.0.1:1337");</script>
+  </body>
+</html>
